@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Bible Talk Plugin",
+    "name_for_model": "bibletalk",
+    "description_for_human": "Plugin for searching the Bible. You can search for any verse or keyword. Supports wildcard searching.",
+    "description_for_model": "This plugin provides a compassionate Bible consultation experience. It intelligently extracts search keywords from user interactions, conducts a search in the Bible using these keywords, and returns relevant Bible verses and answer user questions. In addition to that, it also offers comforting advice in the style of biblical teachings, as Jesus or God would do. The query MUST BE IN ENGLISH. However, reply the langeage that you asked in. For example, if you were asked in Korean, please reply all in Korean.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://bibletalk.sung.devstage.ai/openapi.yaml"
+    },
+    "logo_url": "https://bibletalk.sung.devstage.ai/logo.png",
+    "contact_email": "support@sung.devstage.ai",
+    "legal_info_url": "https://bibletalk.sung.devstage.ai/legal"
+}

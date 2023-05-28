@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: Bible Talk
+  description: A plugin that allows users to search the Bible and receive comforting advice as Jesus or God would do, using ChatGPT.
+  version: 'v1'
+servers:
+  - url: https://bibletalk.sung.devstage.ai
+paths:
+  /search:
+    get:
+      operationId: searchBible
+      summary: Search the Bible for verses or keywords in ENGLISH.
+      parameters:
+        - in: query
+          name: query
+          required: true
+          description: Search keywords or passage reference. only in ENGLISH. Supported wildcards are * and ?.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  verses:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        book:
+                          type: string
+                        chapter:
+                          type: integer
+                        verse:
+                          type: integer
+                        text:
+                          type: string

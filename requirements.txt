@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pandas
+sentence-transformers
+numpy
+faiss-gpu
